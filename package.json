@@ -1,0 +1,43 @@
+{
+  "name": "servicetest1",
+  "version": "0.0.1",
+  "description": "Service uploader",
+  "scripts": {
+    "start": "node app",
+    "purge": "node purge"
+  },
+  "dependencies": {
+    "lodash": "4.16.3",
+    "assert-plus": "1.0.0",
+    "moment-timezone": "0.5.5",
+    "http-status-codes": "1.0.6",
+    "co": "4.6.0",
+    "request": "2.81.0",
+    "request-promise-native": "1.0.3",
+    "body-parser": "1.15.2",
+    "swagger-tools": "0.10.1",
+    "express": "4.15.2",
+    "bunyan": "1.8.1",
+    "bunyan-request": "1.2.0",
+    "helmet": "2.1.2",
+    "nconf": "0.8.4",
+    "mongoose": "~4.9.4",
+    "node-schedule": "1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "3.7.1",
+    "eslint-config-airbnb": "12.0.0",
+    "eslint-plugin-import": "1.16.0",
+    "eslint-plugin-json": "1.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.2",
+    "eslint-plugin-promise": "2.0.1",
+    "eslint-plugin-react": "6.3.0",
+    "eslint-plugin-standard": "2.0.1",
+    "istanbul": "0.4.5",
+    "jasmine": "2.4.1",
+    "jasmine-data-provider": "2.2.0",
+    "request-promise-native": "1.0.3",
+    "request": "2.79.0",
+    "rewire": "2.5.2"
+  }
+}

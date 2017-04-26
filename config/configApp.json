@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "service": {
+    "name": "Test2 Service",
+    "port": 4450
+  },
+  "scheduleRule": "10 * * * * *",
+  "dealerApi": "http://wispy-bird-8767.getsandbox.com/cars",
+  "database": "mongodb://localhost/vehicles"
+}
