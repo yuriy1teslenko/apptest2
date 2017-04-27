@@ -4,7 +4,8 @@
   "description": "Service uploader",
   "scripts": {
     "start": "node app",
-    "purge": "node purge"
+    "purgedb": "node prep -purge",
+    "filldb": "node prep"
   },
   "dependencies": {
     "lodash": "4.16.3",

@@ -12,7 +12,7 @@ module.exports = () => {
       let reqOptions = {
         uri: config.dealerApi,
         method: 'POST',
-        body: _.omit(dbVehicle, ['_id', 'uploaded']),
+        body: _.omit(dbVehicle._doc, ['_id', 'uploaded', '__v']),
         json: true,
       };
       return request(reqOptions)

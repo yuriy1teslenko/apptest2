@@ -6,7 +6,6 @@ const schedule = require('node-schedule');
 const config = require('./config/configApp');
 const api = require('./service/api');
 const uploader = require('./workers/uploader');
-const bootstrap = require('./test/bootstrapHelper');
 
 const app = express();
 const portSrv = parseInt((process.env.PORT || config.service.port), 10);
@@ -22,12 +21,6 @@ app.get('/vehicles', api.list);
 
 schedule.scheduleJob(config.scheduleRule, () => uploader());
 
-bootstrap.fullFillDb()
-  .then(() => {
-    app.listen(portSrv);
-    console.log();
-    console.log(`Express server listening on port ${portSrv}`);
-  })
-  .catch(() => {
-    bootstrap.purgeDb();
-  });
+app.listen(portSrv);
+console.log();
+console.log(`Express server listening on port ${portSrv}`);
